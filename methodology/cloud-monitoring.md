@@ -13,7 +13,7 @@ and DNS logs to identify suspicious behavior.
 
 **Finding Type:** <redacted>  
 **Severity:** Low / Medium / High  
-**Affected Service:** <IAM / EC2 / VPC / API>  
+**Affected Service:** <RDS / EC2 / VPC / API>  
 
 ### Description
 GuardDuty detected anomalous activity indicating
