@@ -1,27 +1,40 @@
 # Executive Summary
 
-An authorized internal web application security assessment was conducted
-on app.talentin.ai to identify common security risks and configuration issues.
+An authorized internal security assessment was conducted on
+app.talentin.ai to identify potential application and cloud-level
+security risks.
 
-The assessment focused on passive and low-impact testing aligned with
-:contentReference[oaicite:0]{index=0} Top 10 principles.
+The assessment combined manual web application testing with
+cloud activity monitoring to provide a more comprehensive
+view of the application’s security posture.
+
+---
 
 ## Key Findings
 - Missing or incomplete HTTP security headers
-- Opportunities to improve client-side security controls
+- Cloud-level security findings identified through AWS GuardDuty monitoring
 
-No critical vulnerabilities or service-disrupting issues were identified
-during the assessment.
+No critical vulnerabilities or service-disrupting issues were
+identified during the assessment.
+
+---
 
 ## Risk Overview
-The identified issues present a **medium risk** primarily related to
-client-side attacks such as cross-site scripting (XSS).
+The identified issues present a **medium overall risk**, primarily
+related to client-side attack exposure and potential cloud
+misconfigurations.
+
+---
 
 ## Recommendations
 - Implement recommended HTTP security headers (e.g., CSP, HSTS where applicable)
-- Review security configuration as part of regular release cycles
-- Continue periodic security testing to reduce future risk
+- Review and tighten cloud access controls and IAM permissions
+- Continue continuous monitoring using AWS GuardDuty
+- Perform periodic security reviews to reduce future risk
+
+---
 
 ## Conclusion
-This assessment provides actionable insights to improve the overall
-security posture of the application while maintaining operational stability.
+By combining application-layer testing with AWS GuardDuty monitoring,
+this assessment provides actionable insights to strengthen both
+application and cloud security while maintaining operational stability.
